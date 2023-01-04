@@ -1,0 +1,57 @@
+.header {
+  overflow: hidden;
+  height: 100vh;
+  color:#fff;
+  .wrapper {
+    position: absolute;
+    top:5%;
+    left:10%;
+    right:10%;
+    bottom:15%;
+    display: flex;
+    flex-direction:column;
+  }
+}
+video {
+  object-fit: cover;
+  object-position: center;
+}
+.header-top, .header-bottom {
+  display: flex;
+}
+.header-top {
+  margin-bottom: auto;
+}
+.header-bottom {
+  align-items:flex-end;
+}
+.titles {
+  font-family: 'Lexend Deca', sans-serif;
+  h1 {
+    opacity:0;
+    animation: 1s appear 1 forwards;
+    font-size: 60px;
+    font-weight: 100;
+
+  }
+  div {
+    opacity:0;
+    animation: .3s appear .8s 1 forwards;
+  }
+}
+.arrow {
+  margin-left: auto;
+  width: 50px;
+  height: 50px;
+  border:1px solid #fff;
+  color:#fff;
+  font-size: 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  overflow: hidden;
+  b {
+    animation: flechounette 3s infinite ;
+  }
+}
