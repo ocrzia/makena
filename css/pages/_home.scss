@@ -1,0 +1,76 @@
+// ---||| Paramétrage global des sections  |||---
+
+.section .wrapper, .section.wrapper, .footer, .footer__infos, .footer__nav, .footer__credit, .news {
+  display: flex;
+}
+
+
+// Section welcome
+
+.welcome {
+  background:url('../img/palm-bg.jpg') center/cover;
+  .wrapper {
+    align-items:center;
+  }
+  &__txt {
+    background:#fff;
+    padding: 150px;
+    margin-left: -10vw;
+    max-width: 750px;
+  }
+}
+
+// Section sustainable
+.sustainable {
+  .wrapper {
+    justify-content:space-between;
+    align-items:center;
+  }
+  &__title {
+    width: 40%;
+  }
+  &__txt {
+    width: 30%;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+// Banner
+.banner {
+  height: 100vh;
+  background:url('../img/makena.jpg') center/cover;
+}
+
+// Section blog
+.blog {
+  .wrapper {
+    flex-direction:column;
+  }
+}
+.news {
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom: 200px;
+  &__img {
+    width: 40%;
+  }
+  &__txt {
+    width: 30%;
+  }
+}
+.news__img {
+  img {
+    box-shadow:50px 50px 0 rgba(0,0,0,0.3);
+  }
+}
+.news:nth-of-type(even) {
+  .news__txt {
+    order:1;
+  }
+  .news__img {
+    img {
+      box-shadow:-50px 50px 0 rgba(0,0,0,0.3);
+    }
+  }
+}

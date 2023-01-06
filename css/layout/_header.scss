@@ -5,8 +5,8 @@
   .wrapper {
     position: absolute;
     top:5%;
-    left:10%;
-    right:10%;
+    left:5%;
+    right:5%;
     bottom:15%;
     display: flex;
     flex-direction:column;
@@ -32,7 +32,7 @@ video {
   align-items:flex-end;
 }
 .titles {
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: $main-typo;
   h1 {
     opacity:0;
     animation: 1s appear 1 forwards;
